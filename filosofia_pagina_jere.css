@@ -1,0 +1,299 @@
+
+*{
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    background-color: rgb(8, 8, 8);
+    font-family: 'Poppins', 'sans-serif';
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+@media (min-width: 913px){
+    .movil{
+        display: none;
+      }
+    .list__link{
+        display:flex;
+        align-items: center;  /*No hace nada parece */
+        gap: 2vw;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    ul, body {
+        /*list-style: none;*/    /*Si hay problemas con algo, probar volver a poner esto */
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+
+    .separador_inicio{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .flecha{                    /* Creo que ningun objeto pertenece a esta clase */
+        padding-left: 2vw;
+    }
+
+    .imagen_escuela_de_atenas{
+        width: auto;
+        height: 39vh;
+        position: absolute;
+        top: 0;
+        right:0;     /*No es necesario el padding-left ahora*/
+    }
+
+    .imagen_gottlob_fregue{
+        width: 255px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right:70px;  
+    }
+
+    .nav{
+        width: 90vw;
+    }
+
+    .nav__link{
+        color: white;
+        display: block;
+        padding: 2.27vh 0;
+        text-decoration: none;
+        height: 7.25vh;
+        font-size: calc(0.8vw + 0.8vh);
+    }
+
+    .nav__link--inside{
+        height: 7.25vh;
+        border-radius: 6px;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .nav__link--inside:hover{
+        background: #343434;
+    }
+
+    .list{
+        width: flex;   /* Esto cambia mucho */
+        height: 115vh;
+        display: flex;
+        /*justify-content: center; */
+        flex-direction: column;
+        border-radius: 0 16px 16px 0;
+    }
+
+    .list__item{
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        position: relative; /* agregado recientemente */
+    }
+
+    .list__item--click{
+        cursor: pointer;
+    }
+
+    .list__button{
+        display:flex;
+        align-items: center;
+        gap: 1em;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .list__inside{
+        padding-right:20vw;
+    }
+
+    .arrow .list__arrow{
+        transform: rotate(90deg);
+    }
+
+    .contenedor_flecha{
+        right: 60vw;
+        position: absolute;
+        
+    }
+
+    .list__arrow{
+        margin-left: auto;
+        transition: transform .3s;
+    }
+
+    .list__show{
+        width: 80%;
+        margin-left: 17%;
+        border-left: 2px solid #C2C2C2;
+        list-style: none;  /*En mi caso no hace nada probablemente por la redundancia de los list_style: none;*/
+        transition: height .4s;
+        height: 0;
+    }
+}
+
+@media (max-width: 913px){
+    .desktop{
+        display: none;
+      }
+    .list__link{
+        display:flex;
+        align-items: center;  /*No hace nada parece */
+        gap: 2vw;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    ul, body {
+        /*list-style: none;*/    /*Si hay problemas con algo, probar volver a poner esto */
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+
+    .separador_inicio{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .flecha{                    /* Creo que ningun objeto pertenece a esta clase */
+        padding-left: 2vw;
+    }
+
+    .imagen_escuela_de_atenas{
+        width: auto;
+        height: 39vh;
+        width: calc(20vh + 35vw);
+        position: absolute;
+        top: 0;
+        left:calc(20vh + 5vw);     /*No es necesario el padding-left ahora*/
+    }
+
+    .imagen_gottlob_fregue{
+        width: calc(10vh + 35vw);
+        height: 31.2vh;
+        position: absolute;
+        top: 0;
+        right:calc(1vh + 2vw);  
+    }
+
+    .nav{
+        width: 90vw;
+    }
+
+    .nav__link{
+        color: white;
+        display: block;
+        padding: 2.27vh 0;
+        text-decoration: none;
+        height: 7.25vh;
+        font-size: calc(0.8vw + 0.8vh);
+    }
+
+    .nav__link--inside{
+        height: 7.25vh;
+        border-radius: 6px;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .nav__link--inside:hover{
+        background: #343434;
+    }
+
+    .list{
+        width: flex;   /* Esto cambia mucho */
+        height: 115vh;
+        display: flex;
+        /*justify-content: center; */
+        flex-direction: column;
+        border-radius: 0 16px 16px 0;
+    }
+
+    .list__item{
+        list-style-type: none;
+        width: 130%;
+        text-align: center;
+        overflow:hidden;
+        position: relative; /* agregado recientemente */
+    }
+
+    .list__item--click{
+        cursor: pointer;
+    }
+
+    .list__button{
+        display:flex;
+        align-items: center;
+        gap: 1em;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .list__inside{
+        padding-right:20vw;
+    }
+
+    .arrow .list__arrow{
+        transform: rotate(90deg);
+    }
+
+    .contenedor_flecha{
+        right: 60vw;
+        position: absolute;
+        
+    }
+
+    .list__arrow{
+        margin-left: auto;
+        transition: transform .3s;
+    }
+
+    .list__show{
+        width: 80%;
+        margin-left: 17%;
+        border-left: 2px solid #C2C2C2;
+        list-style: none;  /*En mi caso no hace nada probablemente por la redundancia de los list_style: none;*/
+        transition: height .4s;
+        height: 0;
+    }
+}
+
+/*Podria poner el @ debajo de los logos de las redes*/
+/*Poner el podcast en la parte de contactos*/
+
+
+/* Empieza menu */
+
+
+.boton_inicio{
+    color:white;
+    position: absolute;
+    top: 0.4vh;
+    left: 2lh;
+    width: 4lh;
+    height: 6vh;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    font-size: calc(1.5vw + 1.5vh);
+}
+
+
+.texto_titulo{
+    color:white;
+}
+
+/*Termina menu*/

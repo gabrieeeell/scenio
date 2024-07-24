@@ -47,7 +47,8 @@ body {
         height: 39vh;
         position: absolute;
         top: 0;
-        right:0;     /*No es necesario el padding-left ahora*/
+        right:0;
+        left: calc(40vw);
     }
 
     .imagen_gottlob_fregue{
@@ -64,14 +65,17 @@ body {
 
     .nav__link{
         color: white;
-        display: block;
+        display: flex;
         padding: 2.27vh 0;
         text-decoration: none;
-        height: 7.25vh;
+        height: calc(4vh + 2vw);
         font-size: calc(0.8vw + 0.8vh);
+        align-items: center;
     }
 
     .nav__link--inside{
+        display: flex;
+        align-items: center;
         height: 7.25vh;
         border-radius: 6px;
         padding-left: 20px;
@@ -173,10 +177,10 @@ body {
     .imagen_escuela_de_atenas{
         width: auto;
         height: 39vh;
-        width: calc(20vh + 35vw);
+        width: calc(30vh + 35vw);
         position: absolute;
         top: 0;
-        left:calc(20vh + 5vw);     /*No es necesario el padding-left ahora*/
+        left:calc(26.5vh + 25vw);     /*No es necesario el padding-left ahora*/
     }
 
     .imagen_gottlob_fregue{
